@@ -1,0 +1,38 @@
+name: Flyspeed
+version: '${project.version}'
+main: sakiayane.flyspeed.Flyspeed
+api-version: 1.16
+prefix: [ FS ]
+authors: [ SakiAyane ]
+description: Change the speed when you are flying
+website: Mineroleplay.net
+
+commands:
+  Fly:
+    description: 开启飞行
+    usage: /<command>
+    aliases: [F]
+    permission: Flyspeed.command.fly
+    permission-message: 你没有权限使用该指令
+  Fly-disabled:
+    description: 关闭
+    usage: /<command>
+    aliases: [FD]
+    permission: Flyspeed.command.flydisabled
+    permission-message: 你没有权限使用该指令
+
+permissions:
+  #自定义权限名 和上方的保持一直
+  Flyspeed.command:
+    description: 使用FS指令
+    #default为true时 则默认都有权限 若为op时则只有op有权限
+    default: op
+  Flyspeed.command.fly:
+    description: 开启飞行模式
+    #default为true时 则默认都有权限 若为op时则只有op有权限
+    default: op
+  Flyspeed.command.flydisabled:
+    description: 关闭飞行模式
+    #default为true时 则默认都有权限 若为op时则只有op有权限
+    default: op
+
