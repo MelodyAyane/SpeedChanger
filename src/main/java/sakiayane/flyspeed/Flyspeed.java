@@ -1,8 +1,7 @@
 package sakiayane.flyspeed;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import sakiayane.flyspeed.Command.Fly;
-import sakiayane.flyspeed.Command.FlyDisabled;
+import sakiayane.flyspeed.Command.*;
 
 import java.util.Objects;
 import java.util.logging.Logger;
@@ -14,9 +13,13 @@ public final class Flyspeed extends JavaPlugin {
         
         Logger logger = this.getLogger();
         logger.info("FlySpeedChanger Enabled!");
-        
-        this.getCommand("Fly").setExecutor(new Fly());
+
+
         this.getCommand("Fly-disabled").setExecutor(new FlyDisabled());
+        this.getCommand("Fly").setExecutor(new NormalFlyspeed());
+        this.getCommand("WalkSpeedDisabled").setExecutor(new WalkSpeedDisabled());
+        this.getCommand("WalkSpeedBoost").setExecutor(new WalkSpeedBooster());
+        this.getCommand("FlySpeedBooster").setExecutor(new FlySpeedBooster());
 
 
 

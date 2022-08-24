@@ -6,18 +6,15 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Fly implements CommandExecutor {
+public class NormalFlyspeed implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("fly")) {
             if (sender instanceof Player) {
-                float flySpeed = (float) Integer.parseInt(args[0]);
                 Player player = (Player) sender;
-                if(flySpeed > 1 || flySpeed < -1) return true;
                 player.setAllowFlight(true);
-                player.setFlySpeed(flySpeed);
+                player.setFlySpeed(0.2f);
                 sender.sendMessage(ChatColor.AQUA + "您已经开启飞行模式");
-                sender.sendMessage(ChatColor.AQUA + "当前飞行速度:1");
                 return true;
             }else {
                 sender.sendMessage("该指令只能玩家输入");
@@ -26,10 +23,6 @@ public class Fly implements CommandExecutor {
             }
 
         }
-
-
-
-
         return false;
     }
 }
