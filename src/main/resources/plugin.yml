@@ -32,7 +32,7 @@ commands:
     aliases: [WB]
     permission: Flyspeed.command.walkspeedboost
     permission-message: 你没有权限使用该指令
-  FlySpeedBooster:
+  FlySpeedBoost:
     description: 开启飞行加速
     usage: /<command>
     aliases: [FSB]
@@ -61,6 +61,5 @@ permissions:
   Flyspeed.command.flyspeedbooster:
     description: 使用FSB指令
     default: op
-
 
 
