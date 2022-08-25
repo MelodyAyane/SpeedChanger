@@ -4,62 +4,64 @@ main: sakiayane.flyspeed.Flyspeed
 api-version: 1.16
 prefix: [ FS ]
 authors: [ SakiAyane ]
-description: Change the speed when you are flying
-website: Mineroleplay.net
-
+description: Change the speed when you are flying/walking.
+website: Github.com/MelodyAyane
 commands:
   Fly-disabled:
-    description: 关闭
+    description: 关闭飞行
     usage: /<command>
-    aliases: [FD]
-    permission: Flyspeed.command.flydisabled
+    permission: SpeedChanger.command.flydisabled
     permission-message: 你没有权限使用该指令
   Fly:
-    description: 开启飞行
+    description: 开启飞行（原版速度）
     usage: /<command>
-    aliases: [F]
-    permission: Flyspeed.command.fly
+    permission: SpeedChanger.command.fly
     permission-message: 你没有权限使用该指令
   WalkSpeedDisabled:
     description: 关闭跑步加速
     usage: /<command>
-    aliases: [WD]
-    permission: Flyspeed.command.walkspeeddisabled
+    permission: SpeedChanger.command.walkspeeddisabled
     permission-message: 你没有权限使用该指令
   WalkSpeedBoost:
     description: 开启跑步加速
     usage: /<command>
-    aliases: [WB]
-    permission: Flyspeed.command.walkspeedboost
+    permission: SpeedChanger.command.walkspeedboost
     permission-message: 你没有权限使用该指令
   FlySpeedBoost:
     description: 开启飞行加速
     usage: /<command>
-    aliases: [FSB]
-    permission: Flyspeed.command.flyspeedbooster
+    permission: SpeedChanger.command.flyspeedboost
+    permission-message: 你没有权限使用该指令
+  schelp:
+    description: 查看帮助
+    usage: /<command>
+    permission: SpeedChanger.command.schelp
     permission-message: 你没有权限使用该指令
 
 permissions:
   #自定义权限名 和上方的保持一直
-  Flyspeed.command:
+  SpeedChanger.command:
     description: 使用FS指令
     #default为true时 则默认都有权限 若为op时则只有op有权限
     default: op
-  Flyspeed.command.flydisabled:
+  SpeedChanger.command.flydisabled:
     description: 关闭飞行模式
     #default为true时 则默认都有权限 若为op时则只有op有权限
     default: op
-  Flyspeed.command.fly:
+  SpeedChanger.command.fly:
     description: 使用F指令
     default: op
-  Flyspeed.command.walkspeeddisabled:
+  SpeedChanger.command.walkspeeddisabled:
     description: 使用WD指令
     default: op
-  Flyspeed.command.walkspeedboost:
+  SpeedChanger.command.walkspeedboost:
     description: 使用WB指令
     default: op
-  Flyspeed.command.flyspeedbooster:
+  SpeedChanger.command.flyspeedboost:
     description: 使用FSB指令
+    default: op
+  SpeedChanger.command.schelp:
+    description: 使用SC指令
     default: op
 
 

@@ -15,6 +15,7 @@ public final class Flyspeed extends JavaPlugin {
         
         Logger logger = this.getLogger();
         logger.info("SpeedChanger Enabled!");
+        logger.info("SpeedChanger Made By MelodyAyane");
 
 
         this.getCommand("Fly-disabled").setExecutor(new FlyDisabled());
@@ -22,6 +23,7 @@ public final class Flyspeed extends JavaPlugin {
         this.getCommand("WalkSpeedDisabled").setExecutor(new WalkSpeedDisabled());
         this.getCommand("WalkSpeedBoost").setExecutor(new WalkSpeedBooster());
         this.getCommand("FlySpeedBoost").setExecutor(new FlySpeedBooster());
+        this.getCommand("schelp").setExecutor(new HelpCommand());
 
         Bukkit.getPluginManager().registerEvents(new JoinMessage(), this);
 
