@@ -10,7 +10,7 @@
 # 指令
 /Fly （开启飞行模式，原版飞行速度）
 
-/FlySpeedBooster （开启倍速飞行）
+/FlySpeedBoost （开启倍速飞行）
 
 /Fly-disabled （关闭飞行模式）
 
