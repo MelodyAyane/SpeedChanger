@@ -8,6 +8,8 @@
 于是就诞生了这款插件 所有权限默认给予OP
 
 # 指令
+/schelp (游戏内查看插件指令）
+
 /Fly （开启飞行模式，原版飞行速度）
 
 /FlySpeedBoost <数值>（开启倍速飞行）
@@ -18,3 +20,15 @@
 
 /WalkSpeedDisabled （关闭步行倍速）
 
+# 权限节点
+SpeedChanger.command.flydisabled:
+
+SpeedChanger.command.fly:
+
+SpeedChanger.command.walkspeeddisabled:
+
+SpeedChanger.command.walkspeedboost:
+
+SpeedChanger.command.flyspeedboost:
+
+SpeedChanger.command.schelp:
