@@ -10,11 +10,11 @@
 # 指令
 /Fly （开启飞行模式，原版飞行速度）
 
-/FlySpeedBoost （开启倍速飞行）
+/FlySpeedBoost <数值>（开启倍速飞行）
 
-/Fly-disabled （关闭飞行模式）
+/Fly-disabled  （关闭飞行模式）
 
-/WalkSpeedBoost （开启步行倍速）
+/WalkSpeedBoost <数值>（开启步行倍速）
 
 /WalkSpeedDisabled （关闭步行倍速）
 
